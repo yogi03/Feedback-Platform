@@ -27,17 +27,25 @@ Based on the current repository layout:
 * A Supabase project set up.
 
 ### 1. Clone the Repository
-git clone [repo](https://github.com/yogi03/Feedback-Platform.git)
+```bash
+git clone https://github.com/yogi03/Feedback-Platform.git
 cd feedback-platform
+```
 
 ### 2. Install Dependencies
+```bash
 npm install
+```
 
 ### 3. Environment Setup
+```bash
 VITE_SUPABASE_URL=your_supabase_project_url
 VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
 
 ### 4. Run Deployment Server
+```bash
 npm run dev
+```
 
 Open your browser to http://localhost:5173 (or the port shown in your terminal).
