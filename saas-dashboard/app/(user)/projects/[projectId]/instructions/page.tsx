@@ -12,11 +12,11 @@ const page = async ({ params }: { params: Promise<{ projectId: string }> }) => {
             <p className="text-lg text-secondary-foreground">Embed the code in your website</p>
             <div className="bg-blue-950 p-6 rounded-md mt-6 relative">
                 <code className=" text-white"> 
-                    {`<my-widget process=${projectId} ></my-widget>`}
+                    {`<my-widget project-id=${projectId} ></my-widget>`}
                     <br />
                     {`<script src="${process.env.WIDGET_URL}/widget.umd.js"></script>`}
                 </code>
-                <CopyBtn text={`<my-widget process=${projectId} ></my-widget>\n<script src="${process.env.WIDGET_URL}/widget.umd.js"></script>`}/>
+                <CopyBtn text={`<my-widget project-id=${projectId} ></my-widget>\n<script src="${process.env.WIDGET_URL}/widget.umd.js"></script>`}/>
             </div>
         </div>
     )

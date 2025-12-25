@@ -8,6 +8,13 @@
       "when": 1761285692805,
       "tag": "20251024060132_white_turbo",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1766645492315,
+      "tag": "20251225065132_easy_blade",
+      "breakpoints": true
     }
   ]
 }
