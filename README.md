@@ -1,16 +1,47 @@
-# React + Vite
+# Feedback Platform - Widget
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight, embeddable feedback widget built with **React** and **Vite**, using **Supabase** for real-time data storage. This project is designed to be embedded into external websites to collect user feedback efficiently.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Frontend Framework:** React.js
+* **Build Tool:** Vite
+* **Backend/Database:** Supabase
+* **Styling:** CSS / Tailwind (if applicable)
+* **Packaging:** Custom Web Component (`web-component.jsx`)
 
-## React Compiler
+## 📂 Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Based on the current repository layout:
 
-## Expanding the ESLint configuration
+* `/src/components/ui`: Reusable UI components (e.g., Widget.jsx).
+* `/src/lib`: Utilities and configuration files.
+* `/src/web-component.jsx`: Entry point for bundling the widget as a custom HTML element.
+* `supabaseClient.js`: Configuration for connecting to the Supabase backend.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Getting Started
+
+### Prerequisites
+
+* Node.js installed (v16+ recommended).
+* A Supabase project set up.
+
+### 1. Clone the Repository
+```bash
+git clone [repo](https://github.com/yogi03/Feedback-Platform.git)
+cd feedback-platform
+
+### 2. Install Dependencies
+```bash
+npm install
+
+### 3. Environment Setup
+```bash
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+### 4. Run Deployment Server
+```bash
+npm run dev
+
+Open your browser to http://localhost:5173 (or the port shown in your terminal).
